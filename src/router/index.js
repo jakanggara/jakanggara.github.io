@@ -1,6 +1,12 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "../views/Home.vue";
+import Home from "@/pages/home.vue";
+import Profile from "@/pages/profile.vue";
+import TA from "@/pages/tugasakhir.vue";
+import GeoKom from "@/pages/geokom.vue";
+
+//Errors
+import E404 from "@/pages/errors/E404.vue";
 
 Vue.use(VueRouter);
 
@@ -8,16 +14,36 @@ const routes = [
   {
     path: "/",
     name: "Home",
+    meta: {
+      layout: 2
+    },
     component: Home
   },
   {
     path: "/about",
     name: "About",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue")
+    component: Profile
+  },
+  {
+    path: "/ta",
+    name: "Tugas Akhir",
+    meta: {
+      layout: 1
+    },
+    component: TA
+  },
+  {
+    path: "/geokom",
+    name: "Geologi Komputasi",
+    meta: {
+      layout: 1
+    },
+    component: GeoKom
+  },
+  {
+    path: "*",
+    name: "404",
+    component: E404
   }
 ];
 

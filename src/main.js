@@ -3,6 +3,14 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 
+import "@/plugins/bootstrap-vue";
+import "@fortawesome/fontawesome-free";
+import "@/plugins/vue2leaflet";
+
+import Layout1 from "./layouts/layout1.vue";
+Vue.component("layout-1", Layout1);
+
+
 Vue.config.productionTip = false;
 
 new Vue({
