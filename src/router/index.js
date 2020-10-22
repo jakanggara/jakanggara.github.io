@@ -2,8 +2,8 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "@/pages/home.vue";
 import Profile from "@/pages/profile.vue";
-import TA from "@/pages/tugasakhir.vue";
-import GeoKom from "@/pages/geokom.vue";
+import About from "@/pages/about.vue";
+import Projects from "@/pages/projects.vue";
 
 //Errors
 import E404 from "@/pages/errors/E404.vue";
@@ -22,23 +22,17 @@ const routes = [
   {
     path: "/about",
     name: "About",
+    component: About
+  },
+  {
+    path: "/profile",
+    name: "Profile",
     component: Profile
   },
   {
-    path: "/ta",
-    name: "Tugas Akhir",
-    meta: {
-      layout: 1
-    },
-    component: TA
-  },
-  {
-    path: "/geokom",
-    name: "Geologi Komputasi",
-    meta: {
-      layout: 1
-    },
-    component: GeoKom
+    path: "/projects",
+    name: "Projects",
+    component: Projects
   },
   {
     path: "*",

@@ -1,14 +1,21 @@
 <template>
   <b-container class="vh-100">
-    <b-row align-h="center">
-      <b-img src="@/assets/images/logo.svg" alt="home logo" fluid></b-img>
-    </b-row>
-    <b-row align-h="center">
-      <b-nav>
-        <b-nav-item v-for="item in menu" :key="item.link" :to="item.link">
-          {{ item.name }}
-        </b-nav-item>
-      </b-nav>
+    <b-row align-h="center" class="mx-auto pt-5">
+      <b-col cols="8" class="mb-4">
+        <b-img
+          src="@/assets/images/logo.svg"
+          alt="home logo"
+          center
+          fluid
+        ></b-img>
+      </b-col>
+      <b-col cols="12" lg="8">
+        <b-nav align="center">
+          <b-nav-item v-for="item in menu" :key="item.link" :to="item.link">
+            {{ item.name }}
+          </b-nav-item>
+        </b-nav>
+      </b-col>
     </b-row>
   </b-container>
 </template>
@@ -26,7 +33,11 @@ export default {
 </script>
 
 <style lang="scss">
-  body {
-    background-color: $nord6;
+.nav-item a {
+  color: $nord9;
+  &:hover {
+    font-weight: bold;
+    color: $nord10;
   }
+}
 </style>
