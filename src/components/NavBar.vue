@@ -12,12 +12,6 @@
           {{ item.name }}
         </b-nav-item>
       </b-navbar-nav>
-
-      <b-navbar-nav class="ml-auto">
-        <b-nav-item to="login">
-          login
-        </b-nav-item>
-      </b-navbar-nav>
     </b-collapse>
   </b-navbar>
 </template>
@@ -35,7 +29,7 @@ export default {
 </script>
 
 <style lang="scss">
-  #navbar {
-    background-color: $nord4;
-  }
+#navbar {
+  background-color: $nord4;
+}
 </style>
