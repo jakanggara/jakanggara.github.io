@@ -1,6 +1,6 @@
 <template>
   <div class="layout">
-    <NavBar />
+    <NavBar class="mb-5" />
     <router-view />
   </div>
 </template>
@@ -14,3 +14,9 @@ export default {
   }
 };
 </script>
+
+<style lang="scss">
+body {
+  background-color: $nord6;
+}
+</style>
