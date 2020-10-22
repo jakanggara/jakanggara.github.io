@@ -4,11 +4,11 @@ export default [
     link: "about"
   },
   {
-    name: "Tugas Akhir",
-    link: "ta"
+    name: "Profile",
+    link: "profile"
   },
   {
-    name: "Geologi Komputasi",
-    link: "geokom"
+    name: "Projects",
+    link: "projects"
   }
 ];
