@@ -24,7 +24,10 @@ module.exports = {
   css: {
     loaderOptions: {
       sass: {
-        prependData: `@import "@/assets/scss/nord.scss";`
+        prependData: `
+        @import "@/assets/scss/nord.scss";
+        @import "@/assets/scss/colors.scss";
+        `
       }
     }
   }
