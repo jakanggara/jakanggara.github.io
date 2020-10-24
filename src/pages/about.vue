@@ -1,22 +1,26 @@
 <template>
-  <div class="about">
-    <b-container>
+  <div id="about">
+    <b-container id="content">
       <h1>What is this Website?</h1>
       This Website is an app that shows my recent works and capabilities. Feel free to check it out.
-    </b-container>
-    <Footer />
+      x<br/>x<br/>x<br/>x<br/>x<br/>x<br/>x<br/>x<br/>x<br/>x<br/>x<br/>
+      </b-container>
   </div>
 </template>
 
 <script>
-import Footer from "@/components/about_footer.vue";
 export default {
-  components: {
-    Footer,
-  },
+  
 }
 </script>
 
-<style>
-
+<style lang="scss">
+  body, html {
+    height: 100%;
+  }
+  #about {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+  }
 </style>
