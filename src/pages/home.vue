@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import menu from "@/components/pageslist";
+import menu from "@/datas/pageslist";
 
 export default {
   data() {
@@ -34,7 +34,7 @@ export default {
 
 <style lang="scss">
 .nav-item a {
-  color: $nord9;
+  color: $color1;
   &:hover {
     font-weight: bold;
     color: $nord10;
