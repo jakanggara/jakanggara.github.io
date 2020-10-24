@@ -1,7 +1,7 @@
 <template>
   <div class="layout">
     <NavBar class="mb-5" />
-    <router-view />
+    <router-view class="overflow-auto"/>
   </div>
 </template>
 
@@ -16,7 +16,11 @@ export default {
 </script>
 
 <style lang="scss">
-body {
+body, html {
   background-color: $nord6;
+  height: 100%;
+}
+.layout {
+  height: 100%;
 }
 </style>
