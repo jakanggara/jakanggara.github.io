@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import menu from "./pageslist";
+import menu from "@/datas/pageslist";
 
 export default {
   data() {
@@ -30,6 +30,6 @@ export default {
 
 <style lang="scss">
 #navbar {
-  background-color: $nord4;
+  background-color: $color2;
 }
 </style>
