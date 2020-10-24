@@ -1,7 +1,7 @@
 <template>
   <div class="layout">
-    <NavBar class="mb-5" />
-    <router-view class="overflow-auto"/>
+    <NavBar />
+    <router-view class="pt-5 overflow-auto"/>
   </div>
 </template>
 
