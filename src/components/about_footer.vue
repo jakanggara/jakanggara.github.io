@@ -24,7 +24,7 @@ export default {
 
 <style lang="scss">
 .footerdiv {
-  background-color: $color3;
+  background-color: $color2;
   border-top-left-radius: 10px 10px;
   border-top-right-radius: 10px 10px;
 }
