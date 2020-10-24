@@ -22,6 +22,9 @@ const routes = [
   {
     path: "/about",
     name: "About",
+    meta: {
+      layout: 3
+    },
     component: About
   },
   {
