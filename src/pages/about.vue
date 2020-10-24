@@ -1,9 +1,13 @@
 <template>
   <div id="about">
     <b-container id="content">
-      <h1>What is this Website?</h1>
-      This Website is an app that shows my recent works and capabilities. Feel free to check it out.
-      x<br/>x<br/>x<br/>x<br/>x<br/>x<br/>x<br/>x<br/>x<br/>x<br/>x<br/>
+      <h1 class="mb-4">What is this Website?</h1>
+      <p>
+        This Website is an app that shows my recent works and capabilities. Feel free to check it out.
+      </p>
+      <p>
+        Works being showcased here are personal project with no business logic nor plan.
+      </p>
       </b-container>
   </div>
 </template>
