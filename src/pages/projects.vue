@@ -1,16 +1,22 @@
 <template>
-  <div id="projects">
+  <b-container id="projects">
     <h1>My Projects</h1>
-    <ul>
-      <li>Project 1</li>
-      <li>Project 2</li>
-    </ul>
-  </div>
+    <b-nav>
+      <b-nav-item v-for="item in projects" :key="item.desc" :to="item.title">
+        {{ item.title }}
+      </b-nav-item>
+    </b-nav>
+  </b-container>
 </template>
 
 <script>
+import dataProjects from "@/datas/projects";
 export default {
-
+  data() {
+    return {
+      projects: dataProjects,
+    }
+  }
 }
 </script>
 
