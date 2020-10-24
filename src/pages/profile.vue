@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <b-container class="about">
     <div>
       <h1>My Profile</h1>
       This page shows my profile as an individual and it should describes my skills as clear as possible.
@@ -23,5 +23,5 @@
       <h2>Conceptual Skills</h2>
       <h2>Technical Skills</h2>
     </div>
-  </div>
+  </b-container>
 </template>
