@@ -1,5 +1,5 @@
 <template>
-  <b-container class="about">
+  <b-container id="profile" class="zero-scrollbar">
     <b-media>
       <h1>My Profile</h1>
       <p>
@@ -31,7 +31,3 @@ export default {
   }
 }
 </script>
-
-<style>
-
-</style>

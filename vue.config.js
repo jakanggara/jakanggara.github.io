@@ -27,6 +27,7 @@ module.exports = {
         prependData: `
         @import "@/assets/scss/nord.scss";
         @import "@/assets/scss/colors.scss";
+        @import "@/assets/scss/zero-scrollbar.scss";
         `
       }
     }
