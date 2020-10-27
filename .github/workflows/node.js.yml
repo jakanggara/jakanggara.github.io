@@ -14,19 +14,14 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [12.x]
-
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version: '12.x'
     - run: npm ci
-    - run: npm run build --if-present
+    - run: npm run build
     - run: npm test
-
-    - name: Commit Deploy
-      run: cd docs | git init | git add -A | git commit -m 'deploy' | git push -f git@github.com:jakanggara/docs.git master:gh-pages
+      env:
+        CI: True 
