@@ -27,3 +27,17 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
+
+    - name: Commit Deploy
+    - run: cd docs
+    - run: git init
+    - run: git add -A
+    - run: git commit -m 'deploy'
+      
+      # if you are deploying to https://<USERNAME>.github.io
+      # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
+      
+      # if you are deploying to https://<USERNAME>.github.io/<REPO>
+    - run: git push -f git@github.com:jakanggara/docs.git master:gh-pages
+      
+    - run: cd -
