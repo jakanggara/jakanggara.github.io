@@ -1,5 +1,4 @@
 module.exports = {
-  outputDir: 'docs',
   chainWebpack: config => {
     config.module
       .rule("vue")
