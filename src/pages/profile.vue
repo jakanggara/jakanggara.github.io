@@ -8,10 +8,23 @@
     </b-media>
     <b-media>
       <h2>Skillsets</h2>
-      <b-card v-for="item in skills" :key="item.title">
-        <p>{{ item.title }}</p>
-        <b-img :src="imgResolve(item.img)" height="50px" right />
-      </b-card>
+      <b-row>
+        <b-col sm="3" class="pb-2 px-1"
+          v-for="item in skills"
+          :key="item.title">
+          <b-card>
+            <b-card-title>
+              {{ item.title }}
+            </b-card-title>
+            <b-media right-align>
+              <template>
+                <b-img :src="imgResolve(item.img)" height="50px" right />
+              </template>
+              <p>{{ item.desc }}</p>
+            </b-media>
+          </b-card>
+        </b-col>
+      </b-row>
     </b-media>
   </b-container>
 </template>
