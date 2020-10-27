@@ -16,7 +16,7 @@ export default {
 </script>
 
 <style>
-  #maprow {
-    height: 600px;
-  }
+#maprow {
+  height: 600px;
+}
 </style>

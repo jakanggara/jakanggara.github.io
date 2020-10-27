@@ -3,15 +3,19 @@
     <b-media>
       <h1>My Profile</h1>
       <p>
-        I am a Geological Graduate that have great interest in Recent Technologies. I also developed skills to make web-apps and mobile apps.
+        I am a Geological Graduate that have great interest in Recent
+        Technologies. I also developed skills to make web-apps and mobile apps.
       </p>
     </b-media>
     <b-media>
       <h2>Skillsets</h2>
       <b-row>
-        <b-col sm="3" class="pb-2 px-1"
+        <b-col
+          sm="3"
+          class="pb-2 px-1"
           v-for="item in skills"
-          :key="item.title">
+          :key="item.title"
+        >
           <b-card>
             <b-card-title>
               {{ item.title }}
@@ -35,12 +39,12 @@ export default {
   data() {
     return {
       skills: dataSkills
-    }
+    };
   },
   methods: {
     imgResolve(img) {
       return `static/${img}`;
     }
   }
-}
+};
 </script>
