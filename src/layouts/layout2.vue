@@ -1,7 +1,7 @@
 <template>
-  <b-container fluid class="overflow-hidden">
-    <Particles domId="coba" :config=ParticlesData class="layout"></Particles>
-    <router-view class="position-absolute fixed-top" />
+  <b-container fluid class="overflow-hidden layout">
+    <router-view class="z999" />
+    <Particles class="position-absolute bro"></Particles>
   </b-container>
 </template>
 
@@ -22,5 +22,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  
+  .z999 {
+    z-index: 999;
+  }
+  .bro {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 </style>

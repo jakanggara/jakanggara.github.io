@@ -1,26 +1,22 @@
 <template>
-  <div :id="this.domId" class="">
+  <div id="particles-js" class="">
   </div>
 </template>
 
 <script>
-import "particles.js";
+import "particles.js"
+import ParticlesData from "@/datas/particlesjs-config.json";
+
+
 export default {
-  name: "VueParticleJs",
-  props: {
-    config: Object,
-    domId: String
+  methods: {
+    initParticles() {
+      console.log(ParticlesData);
+      window.particlesJS("particles-js", ParticlesData);
+    }
   },
   mounted() {
-    if (typeof this.domId !== "string") throw new Error("Invalid Dom object Provided");
-    window.particlesJS(this.domId, {
-      particles:this.config.particles,
-      interactivity:this.config.interactivity,
-      retina_detect:this.config.retina_detect
-    }, function() {
-      // eslint-disable-next-line no-console
-      console.log("callback - particles.js config loaded");
-    });
+    this.initParticles();
   }
-};
+}
 </script>

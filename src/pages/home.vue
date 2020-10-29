@@ -1,5 +1,5 @@
 <template>
-  <b-container class="vh-100">
+  <b-container>
     <b-row align-h="center" class="mx-auto pt-5">
       <b-col cols="8" class="mb-4">
         <b-img
@@ -9,7 +9,7 @@
           fluid
         ></b-img>
       </b-col>
-      <b-col cols="12" lg="8">
+      <b-col cols="12" lg="5">
         <b-nav align="center">
           <b-nav-item v-for="item in menu" :key="item.link" :to="item.link">
             {{ item.name }}
