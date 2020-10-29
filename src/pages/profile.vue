@@ -12,6 +12,7 @@
       <b-row>
         <b-col
           sm="3"
+          cols="6"
           class="pb-2 px-1"
           v-for="item in skills"
           :key="item.title"
