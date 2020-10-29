@@ -14,7 +14,7 @@
         />
       </b-col>
       <b-col cols="10" sm="10">
-        Email: jakanggara@outlook.com
+        <faIcon :icon="['fas', 'envelope']" /> : jakanggara@outlook.com
       </b-col>
       <b-row no-gutters style="width: 100%">
         <b-col class="text-center">
