@@ -37,7 +37,7 @@ export default {
   color: $color1;
   &:hover {
     font-weight: bold;
-    color: $nord10;
+    color: $ccolor1;
   }
 }
 </style>

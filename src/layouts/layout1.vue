@@ -18,7 +18,7 @@ export default {
 <style lang="scss">
 body,
 html {
-  background-color: $nord6;
+  background-color: $bgcolor;
   height: 100%;
 }
 .layout {
