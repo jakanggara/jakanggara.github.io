@@ -37,7 +37,7 @@ export default [
   {
     id: 5,
     title: "ArcGIS",
-    desc: "Things i've done in ArcGIS: Georeferencing, bla bla bla ",
+    desc: "Things i've done in ArcGIS: Georeferencing, Map digitation, buffer and overlay analysis, and layouting.",
     img: "arcgis.png",
     children: ""
   },
