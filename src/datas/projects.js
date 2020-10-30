@@ -3,14 +3,14 @@ export default [
     id: 0,
     title: "Geological Mapping Database",
     desc:
-      "Web-apps to publish geological map in svg. Built with vanilla js, leaflet was used to project the maps.",
+      "Web-apps to publish geological map in svg. Built with vanilla js, leaflet was used to project the maps. Basic CRUD on MySQL was used to control data flow.",
     status: 0
   },
   {
     id: 1,
     title: "Computational Geology Learning Platform",
     desc:
-      "Web-apps to accomodate remote learning and practice Computational Geology Course.",
+      "Web-apps to accomodate remote learning and practice Computational Geology Course. C spaurrently built with MEVN stack.",
     status: 2
   },
   {
