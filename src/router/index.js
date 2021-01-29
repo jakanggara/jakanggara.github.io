@@ -40,6 +40,9 @@ const routes = [
   {
     path: "*",
     name: "404",
+    meta: {
+      layout: 2
+    },
     component: E404
   }
 ];
